@@ -1,7 +1,7 @@
 package com.enderio.machines.common.block;
 
 import com.enderio.base.common.tag.EIOTags;
-import com.enderio.core.common.compat.FlywheelCompat;
+import com.enderio.core.common.compat.CreateCompat;
 import com.enderio.machines.common.blockentity.base.MachineBlockEntity;
 import com.tterrag.registrate.util.entry.BlockEntityEntry;
 import net.minecraft.core.BlockPos;
@@ -146,8 +146,8 @@ public class MachineBlock extends BaseEntityBlock {
         // Credit: https://github.com/XFactHD/FramedBlocks/blob/1.20/src/main/java/xfacthd/framedblocks/common/util/InternalApiImpl.java#L13-L20
         if (ModList.get().isLoaded("starlight")) {
             existingBlockEntity = level.getBlockEntity(pos);
-        } else if (ModList.get().isLoaded("flywheel")) {
-            existingBlockEntity = FlywheelCompat.getExistingBlockEntity(level, pos);
+        } else if (ModList.get().isLoaded("create")) {
+            existingBlockEntity = CreateCompat.getExistingBlockEntity(level, pos);
         } else {
             existingBlockEntity = level.getExistingBlockEntity(pos);
         }

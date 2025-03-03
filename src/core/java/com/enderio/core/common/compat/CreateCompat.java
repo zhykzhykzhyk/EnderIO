@@ -1,12 +1,12 @@
 package com.enderio.core.common.compat;
 
-import com.jozufozu.flywheel.core.virtual.VirtualRenderWorld;
+import com.simibubi.create.foundation.virtualWorld.VirtualRenderWorld;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import org.jetbrains.annotations.Nullable;
 
-public class FlywheelCompat {
+public class CreateCompat {
 
     @Nullable
     public static BlockEntity getExistingBlockEntity(BlockGetter level, BlockPos pos) {
